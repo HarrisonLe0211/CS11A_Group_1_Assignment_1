@@ -12,16 +12,19 @@ def leapYearCheck(x):
 
 def run():
     runCheck = True
-    while runCheck:
+    def yearIn():
         year_in = int(input("Please enter the year:"))
         print("The year \"",year_in,"\":",leapYearCheck(year_in))
-        
+    yearIn()
+    while runCheck:
         cont_in = input("Do you want to continue? (Y/N)")
         if cont_in == "N":
             runCheck = False
             print("Have a great day!")
         elif cont_in != "Y":
             print("Invalid input! Please try again.")
+        else:
+            yearIn()
         
 run()
         
