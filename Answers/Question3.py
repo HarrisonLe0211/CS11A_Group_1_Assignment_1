@@ -1,3 +1,7 @@
+# Question 3: Write a program to accept user input, convert into an integer find the factorial using both 'for' and 'while' loops in the same program. (2 methods)
+#             The program should continue to promt the user for a new number and print the factorial output until the user hits a vulae of 0, 
+#             in which case the program should exit the while loop and terminate execution.
+
 def factorialCheck(num):
     factorial = 1
     if num >=0:
