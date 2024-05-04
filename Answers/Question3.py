@@ -12,17 +12,24 @@ def factorialCheck(num):
 
 def run():
     runCheck = True
-    
-    while runCheck:   
+
+    def numIn():
         num_in = int(input("Please enter the number:"))
         print(factorialCheck(num_in))
-        
+    
+    numIn()
+
+    while runCheck:   
         cont_in = input(("Do you want to continue? (Y/N)"))
         if cont_in == "N":
             print("The program will now be terminated. Have a great day!")
             runCheck = False
         elif cont_in != "Y":
             print("Please try again")
+        else:
+            numIn()
+
+run()
         
 
 

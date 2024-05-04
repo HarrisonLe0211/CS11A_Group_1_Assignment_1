@@ -15,7 +15,9 @@ def run():
     def yearIn():
         year_in = int(input("Please enter the year:"))
         print("The year \"",year_in,"\":",leapYearCheck(year_in))
+    
     yearIn()
+
     while runCheck:
         cont_in = input("Do you want to continue? (Y/N)")
         if cont_in == "N":
